@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/responsive-age-calculator-app-made-with-html-css-an-js-6Y4Ar6Lmez]
-- Live Site URL: [https://age-calculator-app-smoky.vercel.app/]
+- Solution URL: https://www.frontendmentor.io/solutions/responsive-age-calculator-app-made-with-html-css-an-js-6Y4Ar6Lmez
+- Live Site URL: https://age-calculator-app-smoky.vercel.app/
 
 ## My process
 
@@ -46,6 +46,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- [https://momentjs.com/] MomentJS (Js library that allows date manipulation in an easy way)
+- MomentJS (Js library that allows date manipulation in an easy way) - https://momentjs.com/ 
 
-- Frontend Mentor - [https://www.frontendmentor.io/profile/Rabberpoli]
+- Frontend Mentor - https://www.frontendmentor.io/profile/Rabberpoli
