@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="src/age-calculator-app.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,700;1,100;1,700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    html { background-color: #f0f0f0; }
+  </style>
+</head>
+<body>
+  <main class="main-container">
+    <h1 class="hidden-h1"> Age calculator app </h1>
+
+    <div class="card p-25-35">
+      <div class="date-container">
+        <div class="date-label-container mr-23">
+          <label class="label"> DAY </label>
+          <input id="day" onBlur="checkInputEmpty('day')" onkeyup="checkInputValidity('day')" type="number" class="input pl-10" placeholder="DD" aria-placeholder="DD">
+          <label class="label error-label-msg"> </label>
+        </div>
+  
+        <div class="date-label-container mr-23">
+          <label class="label"> MONTH </label>
+          <input id="month" onBlur="checkInputEmpty('month')" onkeyup="checkInputValidity('month')" type="number" class="input pl-10" placeholder="MM" aria-placeholder="MM">
+          <label class="label error-label-msg"> </label>
+        </div>
+  
+        <div class="date-label-container mr-23">
+          <label class="label"> YEAR </label>
+          <input id="year" onBlur="checkInputEmpty('year')" onkeyup="checkInputValidity('year')" type="number" class="input pl-10" placeholder="YYYY" aria-placeholder="YYYY">
+          <label class="label error-label-msg"> </label>
+        </div>
+      </div>
+      <div class="divider-icon-container">
+        <div class="divider mt-32">
+        </div>
+        <div class="icon-container" onclick="computeAge()">
+          <img src="assets/images/icon-arrow.svg" class="icon-pos"> 
+        </div>
+      </div>
+      <div>
+        <div>
+          <p id="year-label"> - - </p>
+          <p class="black-color"> years </p>
+        </div>
+        <div class="relative-pos-month">
+          <p id="month-label"> - -</p>
+          <p class="black-color"> months </p>
+        </div>
+        <div class="relative-pos-day">
+          <p id="day-label"> - -</p>
+          <p class="black-color"> days </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./src/age-calculator-app.js"></script>
+  <div class="attribution">
+    Coded by <a href="https://www.frontendmentor.io/profile/Rabberpoli">Rube</a>.
+  </div>
+</body>
+</html>
