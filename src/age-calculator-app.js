@@ -79,7 +79,7 @@ function computeAge() {
     }
 
     
-    const completeDate = moment([inputYear.value, inputMonth.value, inputDay.value]);
+    const completeDate = moment([inputYear.value, inputMonth.value-1, inputDay.value]);
     console.log(!moment(completeDate).isValid());
     console.log(inputYear.value > moment().year());
     if (!moment(completeDate).isValid() || inputYear.value > moment().year()) {
@@ -88,6 +88,10 @@ function computeAge() {
         applyErrorStyle(inputYear, '');
         return;
     }
+
+    removeErrorStyle(inputDay);
+    removeErrorStyle(inputMonth);
+    removeErrorStyle(inputYear);
     
     const inputsAge = moment([Number(inputYear.value), Number(inputMonth.value)-1, Number(inputDay.value) ]).endOf('day')
     const today = moment([moment().year(), moment().month(), Number(moment(new Date()).format('DD'))]).endOf('day')
